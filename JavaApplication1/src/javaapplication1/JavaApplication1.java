@@ -8,7 +8,7 @@ package javaapplication1;
 import java.util.Scanner;
 /**
  *
- * @author Najmul Muttaqin
+ * @muhammad rizky ardiansyah
  */
 public class JavaApplication1 {
 
@@ -20,22 +20,22 @@ public class JavaApplication1 {
         int tabung,pilih,tarik,saldo,hasil,hsl;
        saldo = 50000;
        tarik = 0;
-       System.out.println("1.Tarik ");
+       System.out.println("1.penarikan ");
        System.out.println("2.Tabung");
-       System.out.println("3.Cek Saldo");
-       System.out.print("Pilih Salah Satu:");
+       System.out.println("3.Cek info Saldo");
+       System.out.print("Pilih:");
        pilih = sc.nextInt();
        
        if(pilih == 1){
-           System.out.println("Saldo anda :"+saldo);
+           System.out.println("Saldo anda sekarang :"+saldo);
            System.out.println("Berapa yang ingin anda tarik");
            tarik = sc.nextInt();
            hasil = saldo -tarik;
            if(tarik < saldo){
-               System.out.println("anda berashil uang ,sisa saldo anda" +hasil);
+               System.out.println("anda berashil menarik uang ,sisa saldo anda saat ini" +hasil);
            }
            else {
-               System.out.println("Saldo anda tidak cukup");
+               System.out.println("maaf Saldo anda tidak cukup");
                
                
            }
